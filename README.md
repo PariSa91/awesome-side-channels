@@ -149,6 +149,13 @@ A curated list of research papers, repositories, and posts exploring **side-chan
   - **Information gained:** whether an embedding model is a decoder-only transformer
 
 
+- [**GATEBLEED: Exploiting On-Core Accelerator Power Gating for High Performance & Stealthy Attacks on AI**](https://arxiv.org/abs/2507.17033) – *Kalyanapu et al., MICRO 2025*.
+
+  - **Attack vector:** data-dependent use of Intel AMX units exposes repeatable timing delays from staged accelerator power gating, including in transformer and mixture-of-experts inference
+  - **Required access**: ability to query an AI service using Intel AMX and measure response timing; the paper demonstrates both local and remote timing inference
+  - **Information gained:** training-data membership (81% accuracy, 0.89 precision) and mixture-of-experts routing decisions (100% expert-choice accuracy)
+
+
 - [**Privacy Side Channels in Machine Learning Systems**](https://arxiv.org/abs/2309.05610) – *Debenedetti et al., 2023*.
   
   - **Attack vector:** output filter that activates on exact sensitive strings from the training data leaks those sensitive strings
